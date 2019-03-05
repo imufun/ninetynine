@@ -1,0 +1,82 @@
+/**********************
+*                     *
+*   Global            *
+*                     *
+***********************/
+// mixins
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+body {
+    line-height: 1.4em;
+
+    // To facilitate consistent footer positioning
+    min-height: 100vh;
+    position: relative;
+    // margin-top: 30px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Reset */
+* li {
+    list-style: none;
+}
+
+* ul {
+    margin: 0;
+    padding: 0;
+}
+
+* img {
+    display: block;
+}
+
+* a {
+    text-decoration: none;
+}
+* {
+    outline: none
+}
+.clear {
+    @include clearfix();
+}
+.form-control:focus, .btn:focus{
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: 0px auto -webkit-focus-ring-color
+}
+.row-z {
+    margin: 0
+}
+
+.border-top-1 {
+  border-top: 1px solid #dddfe2;
+}
+
+.border-bottom-1 {
+  border-bottom: 1px solid #dddfe2;
+}
+
+.border-righ-1{
+  border-right: 1px solid #dddfe2;
+}
+.border-left-1 {
+  border-left: 1px solid #dddfe2;
+}
+.border-all{
+  border: 2px solid #dddfe2;
+}

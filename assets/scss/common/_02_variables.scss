@@ -1,0 +1,76 @@
+/**********************
+*					  *
+*   Variables		  *
+*					  *
+***********************/
+
+/*
+	Colors
+	======
+*/
+
+/*
+	Typography
+	==========
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+
+$font-family: 'Noto Sans', sans-serif;
+// typography sizes
+$baseFontSize : 14;
+
+//== small device
+$h1-fontsize--s: 35;
+$h2-fontsize--s: 31;
+$h3-fontsize--s: 25;
+$h4-fontsize--s: 22;
+$h5-fontsize--s: 14;
+$h6-fontsize--s: 10;
+
+$small-x--s: 10px;
+$small--s: 14;
+$medium--s: 18;
+$large--s: 40;
+$xl--s: 45;
+$xxl--s: 50;
+
+//== large device
+$h1-fontsize--l: 46;
+$h2-fontsize--l: 39;
+$h3-fontsize--l: 31;
+$h4-fontsize--l: 25;
+$h5-fontsize--l: 14;
+$h6-fontsize--l: 10;
+
+$small-x--l: 10;
+$small--l: 14;
+$medium--l: 18;
+$semi-medium--l: 22;
+$large--l: 40;
+$xl--l: 45;
+$xxl--l: 60;
+
+
+/*
+	Sizers
+	=============
+*/
+$b-space: 20px;
+$b-space-xs: $b-space * 0.25;
+$b-space-s: $b-space * 0.5;
+$b-space-l: $b-space * 2;
+$b-space-xl: $b-space * 4;
+
+/*
+	Media queries
+	=============
+*/
+
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 767px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+ 

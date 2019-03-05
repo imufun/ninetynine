@@ -1,0 +1,131 @@
+/**********************
+*					  *
+*   Typography		  *
+*					  *
+***********************/
+
+//== Typography mixin
+//## Rem converter
+
+@function rem($pixels, $context: $baseFontSize) {
+	@if (unitless($pixels)) {
+		$pixels: $pixels * 1px;
+	}
+
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
+
+	@return $pixels / $context * 1rem;
+}
+
+// Base font size creator
+@function baseFontSize($size, $font_family: $font-family) {
+	@return #{$size}px/#{$size+ 10}px $font_family;
+}
+// ============================================================
+
+//== Headings
+//
+//## Global font base including media query
+html,body {
+	font: baseFontSize($baseFontSize); // 14px/24px
+    // @media #{$medium-only} {
+    //     font: baseFontSize($baseFontSize - 2, $font-family); // 12px/22px
+    // }
+	//
+    // @media #{$small-and-down} {
+    //     font: baseFontSize($baseFontSize - 2, $font-family); // 10px/20px
+    // }
+}
+
+//## Global headers style
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1,h2,h3,h4,h5,h6,p { margin: 0; }
+
+
+
+h1,.h1 { font-size: rem($h1-fontsize--l); line-height: rem(63); }
+h2,.h2 { font-size: rem($h2-fontsize--l); line-height: rem(54); }
+h3,.h3 { font-size: rem($h3-fontsize--l); line-height: rem(45); }
+h4,.h4 { font-size: rem($h4-fontsize--l); line-height: rem(38); }
+h5,.h5 { font-size: rem($h5-fontsize--l); line-height: rem(28); }
+h6,.h6 { font-size: rem($h6-fontsize--l); line-height: rem(16); }
+
+.text-xs { font-size: rem($small-x--l); line-height: rem(14); }
+.text-s { font-size: rem($small--l); line-height: rem(24); }
+.text-m { font-size: rem($medium--l); line-height: rem(34); }
+.text-sem-m { font-size: rem($semi-medium--l); line-height: rem(35); }
+.text-l { font-size: rem($large--l); line-height: rem(68); }
+.text-xl { font-size: rem($xl--l); line-height: rem(73); }
+.text-xxl { font-size: rem($xxl--l); line-height: rem(81); }
+
+// @media #{$small-and-down} {
+// 	h1,.h1 { font-size: rem($h1-fontsize--s); line-height: rem(47); }
+// 	h2,.h2 { font-size: rem($h2-fontsize--s); line-height: rem(42); }
+// 	h3,.h3 { font-size: rem($h3-fontsize--s); line-height: rem(35); }
+// 	h4,.h4 { font-size: rem($h4-fontsize--s); line-height: rem(31); }
+// 	h5,.h5 { font-size: rem($h5-fontsize--s); line-height: rem(28); }
+// 	h6,.h6 { font-size: rem($h6-fontsize--s); line-height: rem(16); }
+//
+// 	.text-xs { font-size: rem($small-x--s); line-height: rem(14); }
+// 	.text-s { font-size: rem($small--s); line-height: rem(24); }
+// 	.text-m { font-size: rem($medium--s); line-height: rem(26); }
+// 	.text-l { font-size: rem($large--s); line-height: rem(54); }
+// 	.text-xl { font-size: rem($xl--s); line-height: rem(60); }
+// 	.text-xxl { font-size: rem($xxl--s); line-height: rem(66); }
+// }
+
+
+
+
+//== Paragraphs
+//
+//## Global paragraph styles
+
+p {
+	font: baseFontSize($baseFontSize, $font-family);
+	margin: 0 0 1em 0;
+}
+
+
+//## Global text color styles
+// Text Styles
+.text {
+	&-cap {
+		text-transform: capitalize;
+	}
+	&-upper {
+		text-transform: uppercase;;
+	}
+	// line height
+	&-lh-inherit {
+		line-height: inherit;
+	}
+	&-lh-init {
+		line-height: initial;
+	}
+	//wight
+	&-ultrabold {
+		font-weight: 900;
+	}
+	&-bold {
+		font-weight: 700;
+	}
+
+	// decoration
+	&-underline {
+		text-decoration: underline;
+	}
+    &-underline-none{
+      text-decoration: none;
+    }
+	&-through {
+		text-decoration: line-through;
+	}
+}
+
+.x-small{ font-size: 70%; }
+.l-big{ font-size: 260%; }
+.m-big{ font-size: 140%; }
