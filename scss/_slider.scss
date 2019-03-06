@@ -1,0 +1,9 @@
+.slider-home{
+    // min-height: calc(100vh - 83px);
+    &  .home-slider-img {
+        height: calc(100vh -83px)!important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
