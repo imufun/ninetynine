@@ -1,0 +1,18 @@
+.header-nav {   
+    @include media-breakpoint-down(md) { 
+        .navbar-brand {
+            img {
+                width: 240px;
+            }
+        }
+    }
+    border-bottom: 1px solid #85898c; 
+      li { 
+        a {
+            letter-spacing: 0.1px;  
+            &:hover{
+                border-bottom: 2px solid #adfe20; 
+            }          
+        }
+    } 
+}

@@ -11,12 +11,12 @@
   </head>
   <body>
    <header class="header-nav">
-    <div class="container-fluid bg-dark">
-      <div class="container">
+    <div class="container-fluid bg-dark px-lg-2 px-0">
+      <div class="container px-lg-3 px-0">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#"><img src="../image/logo.png" class="img-fluid" alt="logo"></a>
-          <button class="navbar-toggler btn-primary" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler p-0 text-white" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
            
@@ -49,34 +49,82 @@
 <div id="slideMain" class="slider-home carousel slide" data-ride="carousel">
 
     <!-- Indicators -->
-    <ul class="carousel-indicators">
+    <!-- <ul class="carousel-indicators">
       <li data-target="#slideMain" data-slide-to="0" class="active"></li>
       <li data-target="#slideMain" data-slide-to="1"></li> 
-    </ul>
+    </ul> -->
     
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item home-slider-img active">
         <img src="../image/slider/slider-1.png" class="img-fluid" alt="Los Angeles">
+          <div class="carousel-caption pt-0">
+              <div class="caption-slider p-5"> 
+                  <p class="h3 text-left"><span class="text-light-green">Boek</span> jouw <span class="text-light-green">favoriete workout...</span> geen gedoe! Gewoon doen waar je zin in hebt, wanner en waar je wilt.</p>
+                  <form action="">
+                      <div class="input-group mt-4">
+                          <input type="text" class="form-control" placeholder="Workout bij jou in de buurt...">
+                          <div class="input-group-append">
+                            <button class="btn btn-primary" type="button"><img src="../image/icon-location.png" height="20px"/> Zoeken</button> 
+                          </div>
+                        </div>
+                  </form>
+              </div>
+          </div>
       </div>
       <div class="carousel-item home-slider-img">
         <img src="../image/slider/slider-2.png" class="img-fluid" alt="Chicago">
+        <div class="carousel-caption pt-0"> 
+            <div class="caption-slider p-5"> 
+                <p class="h3 text-left"><span class="text-light-green">Boek</span> jouw <span class="text-light-green">favoriete workout...</span> geen gedoe! Gewoon doen waar je zin in hebt, wanner en waar je wilt.</p>
+                <form action="">
+                    <div class="input-group mt-4">
+                        <input type="text" class="form-control" placeholder="Workout bij jou in de buurt...">
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button"><img src="../image/icon-location.png" height="20px"/> Zoeken</button> 
+                        </div>
+                      </div>
+                </form>
+            </div> 
+        </div>
       </div> 
-    </div>
-    
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#slideMain" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#slideMain" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-  </div>
+    </div> 
+      <!-- Left and right controls -->
+      <!-- <a class="carousel-control-prev" href="#slideMain" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#slideMain" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>   -->
  
 
-
-
-
+  <footer>
+      <div class="container-fluid bg-dark bg-opacity py-3">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-2 align-self-center">
+                  <p class="m-0">&copy; NINETYNINE 2019</p>
+              </div>
+              <div class="col-lg-10">
+                  <ul class="nav justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">LOCATIES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">TEAM</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">PRIVACY</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">TERMS</a>
+                      </li>
+                    </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
     <!-- Optional JavaScript -->
