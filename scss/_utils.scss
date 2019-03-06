@@ -5,5 +5,8 @@
     color: #ffffff
 }
 .bg-opacity {
-    opacity: 0.6
+    opacity: 0.6;
+    @include media-breakpoint-down(md) { 
+        opacity: 1
+    }
 }

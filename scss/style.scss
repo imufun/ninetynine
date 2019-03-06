@@ -3,10 +3,10 @@
  *  Built on top of Bootstrap 4 (https://getbootstrap.com)
  *  Built with the Bootstrap Theme Kit by HackerThemes (https://hackerthemes.com)
  */
-@import '_custom-variables';
+@import 'bootstrap/_custom-variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
-@import 'custom-styles';
+@import 'bootstrap/custom-styles';
 @import 'common/_header.scss';
 @import 'common/_footer.scss';
 @import '_fonts.scss';

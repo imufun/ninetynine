@@ -2,5 +2,8 @@ footer{
     position: absolute;
     bottom: 0px;
     width: 100%;
+    @include media-breakpoint-down(md) { 
+        position: static;
+    }
 }
  
