@@ -2,7 +2,7 @@
     
     & .home-slider-img{
         background-image: url('../image/slider/slider-1.png');
-        height:100vh;
+        height:calc(100vh - 90px);
         @include media-breakpoint-down(md) { 
             height:25vh;
         }

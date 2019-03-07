@@ -1,8 +1,9 @@
+ 
 .text-light-green{
     color: #adfe20
 }
 .text-white{
-    color: #ffffff
+    color: #ffffff !important;
 }
 .bg-opacity {
     opacity: 0.6;
@@ -10,3 +11,10 @@
         opacity: 1
     }
 }
+::-webkit-scrollbar { 
+    display: none;     
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+// @-moz-document url-prefix() {
+//     html,body{overflow: hidden !important;}
+// }
