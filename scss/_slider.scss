@@ -1,9 +1,18 @@
-.slider-home{ 
-    & .carousel-inner {
-        height: 100vh;
+.slider-home{
+    
+    & .home-slider-img{
+        background-image: url('../image/slider/slider-1.png');
+        height:100vh;
         @include media-breakpoint-down(md) { 
-            height: auto;
+            height:25vh;
         }
+        background-size:cover;
+    }
+    & .carousel-inner {
+        // height: 100vh;
+        // @include media-breakpoint-down(md) { 
+        //     height: auto;
+        // }
     }
     & .carousel-caption{
         top : 0px;
@@ -24,3 +33,5 @@
         }
     }    
 }
+
+//style="background-image: url('../image/slider/slider-1.png');height:100vh;background-size:cover"
